@@ -1,0 +1,14 @@
+{
+  "name": "recordvault",
+  "version": "1.0.0",
+  "description": "Enterprise Record Expiry Tracking System",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "seed": "cd server && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
